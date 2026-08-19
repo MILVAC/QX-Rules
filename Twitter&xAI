@@ -17,8 +17,8 @@ host-suffix, twitter.com
 host-suffix, t.co
 
 # 3. xAI 与 Grok
-host-suffix, grok.com
-host-suffix, x.ai
+# host-suffix, grok.com
+# host-suffix, x.ai
 
 # 4. 图文短链与附属资产
 host-suffix, cms-twdigitalassets.com
