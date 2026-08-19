@@ -1,0 +1,47 @@
+# ===================================================================
+# Apple News & Apple Intelligence 完整规则 (Quantumult X 优化版)
+# ===================================================================
+
+# -------------------------------------------------------------------
+# 1. 区域验证与位置服务 (绕过国区限制的核心)
+# -------------------------------------------------------------------
+host-suffix, gsas.apple.com
+host-suffix, gspe1-ssl.ls.apple.com
+
+# -------------------------------------------------------------------
+# 2. Apple News (主站、边缘 CDN 与新闻流)
+# -------------------------------------------------------------------
+host-suffix, apple.news
+host-suffix, smoot.apple.com
+host-suffix, news-assets.apple.com
+host-suffix, news-client.apple.com
+host-suffix, news-client-search.apple.com
+host-suffix, news-edge.apple.com
+host-suffix, news-events.apple.com
+host-suffix, news-app-events.apple.com
+host-suffix, news-sports-events.apple.com
+host-suffix, news-todayconfig-edge.apple.com
+host-suffix, newsletter-edge.apple.com
+
+# -------------------------------------------------------------------
+# 3. Apple Intelligence & Siri (私有云计算与语义通道)
+# -------------------------------------------------------------------
+host-suffix, guzzoni.apple.com
+host-suffix, siri-edge.apple.com
+host-suffix, siri.apple.com
+host-suffix, pcc.apple.com
+
+# -------------------------------------------------------------------
+# 4. Apple Relay & Private Cloud Compute 隐私中继网关
+# -------------------------------------------------------------------
+host-suffix, apple-relay.apple.com
+host-suffix, apple-relay.cloudflare.com
+host-suffix, apple-relay.fastly-edge.com
+host-suffix, mask.icloud.com
+host-suffix, mask-h2.icloud.com
+host-suffix, mask-api.icloud.com
+host-suffix, mask.apple-dns.net
+host-suffix, mask-api.fe.apple-dns.net
+host-suffix, gateway.icloud.com
+host-suffix, metrics.icloud.com
+host, cp4.cloudflare.com
