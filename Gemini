@@ -1,23 +1,23 @@
 # ===================================================================
-# Google Gemini / Bard / AI Studio / DeepMind 专属加速规则
-# 建议策略组: Gemini (绑定台湾 TW 或美国 US 纯净原生 IP 节点)
+# Google Gemini / AI Studio / DeepMind 专属加速规则 (精准版)
 # ===================================================================
 
-# > Gemini Web & 官方门户
+# 1. Gemini Web & 官方门户与笔记
 host-suffix, gemini.google.com
 host-suffix, bard.google.com
 host-suffix, aistudio.google.com
 host-suffix, makersuite.google.com
+host-suffix, notebooklm.google.com
+host-suffix, notebooklm.google
 
-# > Google AI 开发者平台与大模型生态
+# 2. Google AI 生态与研发平台
 host-suffix, ai.google.dev
 host-suffix, generativeai.google
 host-suffix, deepmind.google
 host-suffix, deepmind.com
-host-suffix, notebooklm.google.com
-host-suffix, notebooklm.google
+host-suffix, aisandbox-pa.googleapis.com
 
-# > Gemini App & API 后台通信网关 (精准匹配，不劫持全局 google.com)
+# 3. Gemini App & API 后台通信网关 (精准匹配，不劫持全局 Google)
 host, alkalimakersuite-pa.clients6.google.com
 host, waa-pa.clients6.google.com
 host, geller-pa.googleapis.com
@@ -25,5 +25,5 @@ host, proactivebackend-pa.googleapis.com
 host, generativelanguage.googleapis.com
 host, gateway.google.dev
 
-# > 专属关键词兜底 (杜绝误杀 gemini.com 交易所)
+# 4. 专属关键词兜底
 host-keyword, generativelanguage
