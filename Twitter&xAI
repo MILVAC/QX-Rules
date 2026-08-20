@@ -1,8 +1,8 @@
 # ==========================================
-# > X (Twitter / xAI / Fastly CDN 极速增强版)
+# > X (Twitter) 全链路无死角极速规则
 # ==========================================
 
-# 1. 核心数据与 CDN 网段 (置顶跳过 DNS 解析)
+# 1. 核心数据中心 IP 段 (置顶 + 跳过 DNS 解析)
 ip-cidr, 192.133.76.0/22, no-resolve
 ip-cidr, 199.59.148.0/22, no-resolve
 ip-cidr, 199.96.56.0/21, no-resolve
@@ -10,27 +10,30 @@ ip-cidr, 202.160.128.0/22, no-resolve
 ip-cidr, 209.237.192.0/19, no-resolve
 ip-cidr, 69.195.160.0/19, no-resolve
 
-# 2. 超高频核心主站与多媒体 CDN (优先匹配)
-host-suffix, x.com
+# 2. 核心媒体与视频分片分发 (解决视频转圈的核心)
+host-suffix, video.twimg.com
+host-suffix, pbs.twimg.com
+host-suffix, ton.twitter.com
+host-suffix, ton.twimg.com
 host-suffix, twimg.com
-host-suffix, twitter.com
-host-suffix, t.co
-
-# 3. xAI 与 Grok
-# host-suffix, grok.com
-# host-suffix, x.ai
-
-# 4. 图文短链与附属资产
-host-suffix, cms-twdigitalassets.com
-host-suffix, tweetdeck.com
 host-suffix, twimg.co
 host-suffix, twimg.org
-host-suffix, twitpic.com
-host-suffix, twitter.co
-host-suffix, twtrdns.net
-host-suffix, twttr.com
-host-suffix, twttr.net
 host-suffix, twvid.com
 
-# 5. 模糊兜底 (捕获一切未列出的 twitter 边缘域名)
+# 3. 主站、API 与短链重定向
+host-suffix, x.com
+host-suffix, twitter.com
+host-suffix, t.co
+host-suffix, x.co
+host-suffix, twttr.com
+host-suffix, twttr.net
+host-suffix, twtrdns.net
+host-suffix, tweetdeck.com
+host-suffix, cms-twdigitalassets.com
+
+# 4. 客户端 User-Agent (捕获 iOS 独立网络通信)
+user-agent, Twitter*
+user-agent, X*
+
+# 5. 模糊兜底
 host-keyword, twitter
