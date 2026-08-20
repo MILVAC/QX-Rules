@@ -1,0 +1,110 @@
+# ===================================================================
+# 全平台 AI 专属加速规则 (AI.list - Quantumult X 终极优化版)
+# 适用策略: 建议绑定 美区(US) 或 台湾(TW) 纯净原生/住宅 IP 节点
+# ===================================================================
+
+# -------------------------------------------------------------------
+# 1. Anthropic / Claude
+# -------------------------------------------------------------------
+host-suffix, anthropic.com
+host-suffix, claude.ai
+host-suffix, claude.com
+host-suffix, claudeusercontent.com
+host, cdn.usefathom.com
+
+# -------------------------------------------------------------------
+# 2. OpenAI / ChatGPT / Sora / 实时语音 (LiveKit)
+# -------------------------------------------------------------------
+host-suffix, ai.com
+host-suffix, chatgpt.com
+host-suffix, openai.com
+host-suffix, oaistatic.com
+host-suffix, oaiusercontent.com
+host-suffix, sora.com
+host-suffix, livekit.cloud
+host-suffix, chatgpt.livekit.cloud
+host-suffix, host.livekit.cloud
+host-suffix, openaicom.imgix.net
+host-suffix, openaicomproductionae4b.blob.core.windows.net
+host-suffix, openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+host-suffix, production-openaicom-storage.azureedge.net
+user-agent, ChatGPT*
+user-agent, OpenAI*
+
+# -------------------------------------------------------------------
+# 3. Google Gemini / AI Studio / DeepMind (高精颗粒度，不劫持全局 Google)
+# -------------------------------------------------------------------
+host-suffix, gemini.google.com
+host-suffix, bard.google.com
+host-suffix, aistudio.google.com
+host-suffix, makersuite.google.com
+host-suffix, ai.google.dev
+host-suffix, generativeai.google
+host-suffix, deepmind.com
+host-suffix, deepmind.google
+host-suffix, notebooklm.google.com
+host-suffix, notebooklm.google
+host-suffix, aisandbox-pa.googleapis.com
+host, alkalimakersuite-pa.clients6.google.com
+host, waa-pa.clients6.google.com
+host, geller-pa.googleapis.com
+host, proactivebackend-pa.googleapis.com
+host, generativelanguage.googleapis.com
+host, gateway.google.dev
+host-keyword, generativelanguage
+
+# -------------------------------------------------------------------
+# 4. xAI / Grok
+# -------------------------------------------------------------------
+host-suffix, x.ai
+host-suffix, grok.com
+
+# -------------------------------------------------------------------
+# 5. Perplexity
+# -------------------------------------------------------------------
+host-suffix, perplexity.ai
+host-suffix, pplx.ai
+host-suffix, perplexity.com
+host, pplx-res.cloudinary.com
+
+# -------------------------------------------------------------------
+# 6. Cursor & 开发类 AI
+# -------------------------------------------------------------------
+host-suffix, cursor.sh
+host-suffix, cursor.com
+host-suffix, cursor-cdn.com
+host-suffix, cursorapi.com
+host-suffix, cursorvm.com
+host-suffix, dify.ai
+host-suffix, grazie.ai
+
+# -------------------------------------------------------------------
+# 7. Manus AI
+# -------------------------------------------------------------------
+host-suffix, manus.im
+host-suffix, manuscdn.com
+
+# -------------------------------------------------------------------
+# 8. Meta AI
+# -------------------------------------------------------------------
+host-suffix, meta.ai
+
+# -------------------------------------------------------------------
+# 9. Microsoft Copilot (不影响普通 Bing 搜索)
+# -------------------------------------------------------------------
+host, copilot.microsoft.com
+host, sydney.bing.com
+host, gateway.bingviz.microsoft.net
+host, gateway.bingviz.microsoftapp.net
+host, edgeservices.bing.com
+
+# -------------------------------------------------------------------
+# 10. 生图与模型社区 (Midjourney, Hugging Face, Poe, Mistral)
+# -------------------------------------------------------------------
+host-suffix, midjourney.com
+host-suffix, poe.com
+host-suffix, poecdn.net
+host-suffix, mistral.ai
+host-suffix, huggingface.co
+host-suffix, hf.co
+host-suffix, hf.space
