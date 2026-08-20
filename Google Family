@@ -1,0 +1,30 @@
+# ===================================================================
+# Google 核心服务与全家桶规则 (Google.list)
+# 建议策略组: 全球加速 / Google (可使用 HK/SG 高速节点或自动测速)
+# ===================================================================
+
+# > Google 核心根域
+host-suffix, google.com
+host-suffix, google.com.hk
+host-suffix, googleapis.com
+host-suffix, googleusercontent.com
+host-suffix, gstatic.com
+host-suffix, g.co
+host-suffix, 1e100.net
+
+# > YouTube 与媒体分发
+host-suffix, youtube.com
+host-suffix, youtu.be
+host-suffix, ytimg.com
+host-suffix, googlevideo.com
+host-suffix, ggpht.com
+
+# > 开发者与代码托管
+host-suffix, golang.org
+host-suffix, go.dev
+host-suffix, appspot.com
+host-suffix, apigee.com
+
+# > 关键词兜底
+host-keyword, google
+host-keyword, .blogspot.
